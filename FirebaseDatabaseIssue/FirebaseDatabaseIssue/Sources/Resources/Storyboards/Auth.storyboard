@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -40,7 +41,7 @@
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                                         <connections>
-                                                            <action selector="didTapLoginButton:" destination="yqJ-jV-Fld" eventType="touchUpInside" id="1RW-xN-tDv"/>
+                                                            <action selector="didTapLoginButton:" destination="yqJ-jV-Fld" eventType="touchUpInside" id="FUZ-YX-KNN"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y60-Lv-cbw">
@@ -48,7 +49,7 @@
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                                         <connections>
-                                                            <action selector="didTapRegisterButton:" destination="yqJ-jV-Fld" eventType="touchUpInside" id="0ag-GP-3fc"/>
+                                                            <action selector="didTapRegisterButton:" destination="yqJ-jV-Fld" eventType="touchUpInside" id="89O-Cj-qsg"/>
                                                         </connections>
                                                     </button>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FFw-An-V8b">
@@ -63,7 +64,7 @@
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                                         <connections>
-                                                            <action selector="didTapForgotPasswordButton:" destination="yqJ-jV-Fld" eventType="touchUpInside" id="tbF-yu-Uhs"/>
+                                                            <action selector="didTapForgotPasswordButton:" destination="yqJ-jV-Fld" eventType="touchUpInside" id="k9a-tH-89i"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -103,19 +104,19 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="contentScrollView" destination="ZPB-bu-nw4" id="dCF-OR-5tc"/>
-                        <outlet property="contentScrollViewHeightConstraint" destination="a94-fo-KXk" id="MfY-Am-4UT"/>
-                        <outlet property="forgotPasswordButton" destination="bcc-Ce-QXS" id="4nw-E0-9bv"/>
-                        <outlet property="loginButton" destination="uIs-aV-92X" id="20z-yF-Vm0"/>
-                        <outlet property="registerButton" destination="y60-Lv-cbw" id="zR9-Qy-hXC"/>
-                        <outletCollection property="textFieldsArray" destination="Kuf-qS-21e" collectionClass="NSMutableArray" id="t1D-wa-W2s"/>
-                        <outletCollection property="textFieldsArray" destination="itw-nj-ky8" collectionClass="NSMutableArray" id="H7y-sb-QDD"/>
+                        <outlet property="contentScrollView" destination="ZPB-bu-nw4" id="2V7-4C-P7j"/>
+                        <outlet property="contentScrollViewHeightConstraint" destination="a94-fo-KXk" id="Kmt-Wx-fet"/>
+                        <outlet property="forgotPasswordButton" destination="bcc-Ce-QXS" id="vcx-Uy-3VQ"/>
+                        <outlet property="loginButton" destination="uIs-aV-92X" id="npH-iK-iaa"/>
+                        <outlet property="registerButton" destination="y60-Lv-cbw" id="nFf-JZ-sdg"/>
+                        <outletCollection property="textFieldsArray" destination="Kuf-qS-21e" collectionClass="NSMutableArray" id="nMe-lP-5Yf"/>
+                        <outletCollection property="textFieldsArray" destination="itw-nj-ky8" collectionClass="NSMutableArray" id="u1P-AU-j37"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pwi-kn-6gm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="QPb-t5-6nK">
                     <connections>
-                        <action selector="didTapBackgroundView:" destination="yqJ-jV-Fld" id="WCx-VC-MC8"/>
+                        <action selector="didTapBackgroundView:" destination="yqJ-jV-Fld" id="HyL-zg-mqQ"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
