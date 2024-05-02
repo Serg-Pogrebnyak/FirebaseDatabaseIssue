@@ -14,6 +14,7 @@ struct _R {
   let bundle: Foundation.Bundle
   var string: string { .init(bundle: bundle, preferredLanguages: nil, locale: nil) }
   var color: color { .init(bundle: bundle) }
+  var file: file { .init(bundle: bundle) }
   var storyboard: storyboard { .init(bundle: bundle) }
 
   func string(bundle: Foundation.Bundle) -> string {
@@ -26,6 +27,9 @@ struct _R {
     .init(bundle: bundle, preferredLanguages: preferredLanguages, locale: locale)
   }
   func color(bundle: Foundation.Bundle) -> color {
+    .init(bundle: bundle)
+  }
+  func file(bundle: Foundation.Bundle) -> file {
     .init(bundle: bundle)
   }
   func storyboard(bundle: Foundation.Bundle) -> storyboard {
@@ -51,9 +55,51 @@ struct _R {
     }
 
 
-    /// This `_R.string.localizable` struct is generated, and contains static references to 0 localization keys.
+    /// This `_R.string.localizable` struct is generated, and contains static references to 6 localization keys.
     struct localizable {
       let source: RswiftResources.StringResource.Source
+
+      /// en translation: Forgot Password
+      ///
+      /// Key: LoginVC.forgotPasswordButton.title
+      ///
+      /// Locales: en
+      var loginVCForgotPasswordButtonTitle: RswiftResources.StringResource { .init(key: "LoginVC.forgotPasswordButton.title", tableName: "Localizable", source: source, developmentValue: "Forgot Password", comment: nil) }
+
+      /// en translation: Log in
+      ///
+      /// Key: LoginVC.loginButton.title
+      ///
+      /// Locales: en
+      var loginVCLoginButtonTitle: RswiftResources.StringResource { .init(key: "LoginVC.loginButton.title", tableName: "Localizable", source: source, developmentValue: "Log in", comment: nil) }
+
+      /// en translation: Register
+      ///
+      /// Key: LoginVC.registerButton.title
+      ///
+      /// Locales: en
+      var loginVCRegisterButtonTitle: RswiftResources.StringResource { .init(key: "LoginVC.registerButton.title", tableName: "Localizable", source: source, developmentValue: "Register", comment: nil) }
+
+      /// en translation: Log in
+      ///
+      /// Key: LoginVC.title
+      ///
+      /// Locales: en
+      var loginVCTitle: RswiftResources.StringResource { .init(key: "LoginVC.title", tableName: "Localizable", source: source, developmentValue: "Log in", comment: nil) }
+
+      /// en translation: Enter your email
+      ///
+      /// Key: TextFieldDesignFactory.email.placeholder
+      ///
+      /// Locales: en
+      var textFieldDesignFactoryEmailPlaceholder: RswiftResources.StringResource { .init(key: "TextFieldDesignFactory.email.placeholder", tableName: "Localizable", source: source, developmentValue: "Enter your email", comment: nil) }
+
+      /// en translation: Enter your password
+      ///
+      /// Key: TextFieldDesignFactory.password.placeholder
+      ///
+      /// Locales: en
+      var textFieldDesignFactoryPasswordPlaceholder: RswiftResources.StringResource { .init(key: "TextFieldDesignFactory.password.placeholder", tableName: "Localizable", source: source, developmentValue: "Enter your password", comment: nil) }
     }
   }
 
@@ -63,6 +109,14 @@ struct _R {
 
     /// Color `AccentColor`.
     var accentColor: RswiftResources.ColorResource { .init(name: "AccentColor", path: [], bundle: bundle) }
+  }
+
+  /// This `_R.file` struct is generated, and contains static references to 1 resource files.
+  struct file {
+    let bundle: Foundation.Bundle
+
+    /// Resource file `GoogleService-Info.plist`.
+    var googleServiceInfoPlist: RswiftResources.FileResource { .init(name: "GoogleService-Info", pathExtension: "plist", bundle: bundle, locale: LocaleReference.none) }
   }
 
   /// This `_R.storyboard` struct is generated, and contains static references to 3 storyboards.

@@ -25,13 +25,13 @@ extension TextFieldDesignFactory: TextFieldDesignFactoryProtocol {
     
     func designLoginPasswordTextField(_ textField: UITextField) {
         commonDesignPasswordTextField(textField)
-        textField.placeholder = ""//R.string.localizable.textFieldDesignFactoryPasswordPlaceholder()
+        textField.placeholder = R.string.localizable.textFieldDesignFactoryPasswordPlaceholder()
         textField.returnKeyType = .done
     }
     
     // MARK: - Private stuff
     private func commonDesignEmailTextField(_ textField: UITextField) {
-        textField.placeholder = ""//R.string.localizable.textFieldDesignFactoryEmailPlaceholder()
+        textField.placeholder = R.string.localizable.textFieldDesignFactoryEmailPlaceholder()
         textField.keyboardType = .emailAddress
     }
     

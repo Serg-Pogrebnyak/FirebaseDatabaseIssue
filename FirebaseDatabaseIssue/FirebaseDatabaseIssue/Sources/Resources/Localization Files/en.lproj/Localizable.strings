@@ -5,3 +5,11 @@
   Created by Serhii on 02.05.2024.
   
 */
+
+"LoginVC.title" = "Log in";
+"LoginVC.loginButton.title" = "Log in";
+"LoginVC.registerButton.title" = "Register";
+"LoginVC.forgotPasswordButton.title" = "Forgot Password";
+
+"TextFieldDesignFactory.email.placeholder" = "Enter your email";
+"TextFieldDesignFactory.password.placeholder" = "Enter your password";

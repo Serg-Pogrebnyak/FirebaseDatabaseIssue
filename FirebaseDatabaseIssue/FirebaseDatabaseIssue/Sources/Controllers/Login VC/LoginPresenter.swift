@@ -16,10 +16,10 @@ final class LoginPresenter: LoginPresentationLogic {
     weak var viewController: LoginDisplayLogic?
 
     func viewDidLoad(with response: LoginUseCases.ViewDidLoad.Response) {
-        let title = ""//R.string.localizable.loginVCTitle()
-        let loginButtonTitle = ""//R.string.localizable.loginVCLoginButtonTitle()
-        let registerButtonTitle = ""//R.string.localizable.loginVCRegisterButtonTitle()
-        let forgotPasswordButtonTitle = ""//R.string.localizable.loginVCForgotPasswordButtonTitle()
+        let title = R.string.localizable.loginVCTitle()
+        let loginButtonTitle = R.string.localizable.loginVCLoginButtonTitle()
+        let registerButtonTitle = R.string.localizable.loginVCRegisterButtonTitle()
+        let forgotPasswordButtonTitle = R.string.localizable.loginVCForgotPasswordButtonTitle()
         viewController?.viewDidLoad(with: .init(title: title,
                                                 loginButtonTitle: loginButtonTitle,
                                                 registerButtonTitle: registerButtonTitle,
