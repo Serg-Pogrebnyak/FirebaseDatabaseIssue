@@ -7,23 +7,67 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D81789CD4D677EB53197688 /* Pods_FirebaseDatabaseIssue.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DC40BF80E7F83C7850C1CCA /* Pods_FirebaseDatabaseIssue.framework */; };
 		D0BA93242BE3C1CB00F2CD99 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BA93232BE3C1CB00F2CD99 /* AppDelegate.swift */; };
-		D0BA93262BE3C1CB00F2CD99 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BA93252BE3C1CB00F2CD99 /* SceneDelegate.swift */; };
-		D0BA93282BE3C1CB00F2CD99 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BA93272BE3C1CB00F2CD99 /* ViewController.swift */; };
-		D0BA932B2BE3C1CB00F2CD99 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = D0BA932A2BE3C1CB00F2CD99 /* Base */; };
 		D0BA932D2BE3C1CC00F2CD99 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0BA932C2BE3C1CC00F2CD99 /* Assets.xcassets */; };
 		D0BA93302BE3C1CC00F2CD99 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = D0BA932F2BE3C1CC00F2CD99 /* Base */; };
+		D0BA933A2BE3C28600F2CD99 /* AppDelegateRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BA93392BE3C28600F2CD99 /* AppDelegateRouter.swift */; };
+		D0BA933C2BE3C2A000F2CD99 /* AppDelegateUseCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BA933B2BE3C2A000F2CD99 /* AppDelegateUseCases.swift */; };
+		D0BA933E2BE3C2AE00F2CD99 /* AppDelegateInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BA933D2BE3C2AE00F2CD99 /* AppDelegateInteractor.swift */; };
+		D0BA93402BE3C2C000F2CD99 /* AppDelegatePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BA933F2BE3C2C000F2CD99 /* AppDelegatePresenter.swift */; };
+		D0BA93432BE3C2DD00F2CD99 /* BaseDependencyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BA93422BE3C2DD00F2CD99 /* BaseDependencyContainer.swift */; };
+		D0BA93462BE3C2FB00F2CD99 /* LoadingScreenFactoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BA93452BE3C2FB00F2CD99 /* LoadingScreenFactoryProtocol.swift */; };
+		D0BA93482BE3C30900F2CD99 /* AuthScreenFactoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BA93472BE3C30900F2CD99 /* AuthScreenFactoryProtocol.swift */; };
+		D0BA93512BE3C33B00F2CD99 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BA934B2BE3C33B00F2CD99 /* LoginPresenter.swift */; };
+		D0BA93532BE3C33B00F2CD99 /* LoginUseCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BA934D2BE3C33B00F2CD99 /* LoginUseCases.swift */; };
+		D0BA93542BE3C33B00F2CD99 /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BA934E2BE3C33B00F2CD99 /* LoginRouter.swift */; };
+		D0BA93552BE3C33B00F2CD99 /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BA934F2BE3C33B00F2CD99 /* LoginInteractor.swift */; };
+		D0BA93562BE3C33B00F2CD99 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BA93502BE3C33B00F2CD99 /* LoginVC.swift */; };
+		D0BA935E2BE3C37300F2CD99 /* LoadingPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BA93582BE3C37300F2CD99 /* LoadingPresenter.swift */; };
+		D0BA93602BE3C37300F2CD99 /* LoadingUseCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BA935A2BE3C37300F2CD99 /* LoadingUseCases.swift */; };
+		D0BA93612BE3C37300F2CD99 /* LoadingRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BA935B2BE3C37300F2CD99 /* LoadingRouter.swift */; };
+		D0BA93622BE3C37300F2CD99 /* LoadingInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BA935C2BE3C37300F2CD99 /* LoadingInteractor.swift */; };
+		D0BA93632BE3C37300F2CD99 /* LoadingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BA935D2BE3C37300F2CD99 /* LoadingVC.swift */; };
+		D0BA93662BE3C43E00F2CD99 /* TextFieldDesignFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BA93652BE3C43E00F2CD99 /* TextFieldDesignFactory.swift */; };
+		D0BA93692BE3C46100F2CD99 /* BaseRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BA93682BE3C46100F2CD99 /* BaseRouter.swift */; };
+		D0BA936D2BE3C4C100F2CD99 /* Auth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0BA936C2BE3C4C100F2CD99 /* Auth.storyboard */; };
+		D0BA936F2BE3C4DE00F2CD99 /* Loading.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0BA936E2BE3C4DE00F2CD99 /* Loading.storyboard */; };
+		D0BA93772BE3C54600F2CD99 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D0BA93752BE3C54600F2CD99 /* Localizable.strings */; };
+		D0BA938D2BE3CD1600F2CD99 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BA938C2BE3CD1600F2CD99 /* R.generated.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4CF3F1BDBAE2A1BD513BF7F8 /* Pods-FirebaseDatabaseIssue.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebaseDatabaseIssue.debug.xcconfig"; path = "Target Support Files/Pods-FirebaseDatabaseIssue/Pods-FirebaseDatabaseIssue.debug.xcconfig"; sourceTree = "<group>"; };
+		4DC40BF80E7F83C7850C1CCA /* Pods_FirebaseDatabaseIssue.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FirebaseDatabaseIssue.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0BA93202BE3C1CB00F2CD99 /* FirebaseDatabaseIssue.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirebaseDatabaseIssue.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0BA93232BE3C1CB00F2CD99 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D0BA93252BE3C1CB00F2CD99 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D0BA93272BE3C1CB00F2CD99 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		D0BA932A2BE3C1CB00F2CD99 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D0BA932C2BE3C1CC00F2CD99 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D0BA932F2BE3C1CC00F2CD99 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D0BA93312BE3C1CC00F2CD99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D0BA93392BE3C28600F2CD99 /* AppDelegateRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegateRouter.swift; sourceTree = "<group>"; };
+		D0BA933B2BE3C2A000F2CD99 /* AppDelegateUseCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegateUseCases.swift; sourceTree = "<group>"; };
+		D0BA933D2BE3C2AE00F2CD99 /* AppDelegateInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegateInteractor.swift; sourceTree = "<group>"; };
+		D0BA933F2BE3C2C000F2CD99 /* AppDelegatePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegatePresenter.swift; sourceTree = "<group>"; };
+		D0BA93422BE3C2DD00F2CD99 /* BaseDependencyContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseDependencyContainer.swift; sourceTree = "<group>"; };
+		D0BA93452BE3C2FB00F2CD99 /* LoadingScreenFactoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingScreenFactoryProtocol.swift; sourceTree = "<group>"; };
+		D0BA93472BE3C30900F2CD99 /* AuthScreenFactoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthScreenFactoryProtocol.swift; sourceTree = "<group>"; };
+		D0BA934B2BE3C33B00F2CD99 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		D0BA934D2BE3C33B00F2CD99 /* LoginUseCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUseCases.swift; sourceTree = "<group>"; };
+		D0BA934E2BE3C33B00F2CD99 /* LoginRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
+		D0BA934F2BE3C33B00F2CD99 /* LoginInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
+		D0BA93502BE3C33B00F2CD99 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		D0BA93582BE3C37300F2CD99 /* LoadingPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingPresenter.swift; sourceTree = "<group>"; };
+		D0BA935A2BE3C37300F2CD99 /* LoadingUseCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingUseCases.swift; sourceTree = "<group>"; };
+		D0BA935B2BE3C37300F2CD99 /* LoadingRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingRouter.swift; sourceTree = "<group>"; };
+		D0BA935C2BE3C37300F2CD99 /* LoadingInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingInteractor.swift; sourceTree = "<group>"; };
+		D0BA935D2BE3C37300F2CD99 /* LoadingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingVC.swift; sourceTree = "<group>"; };
+		D0BA93652BE3C43E00F2CD99 /* TextFieldDesignFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldDesignFactory.swift; sourceTree = "<group>"; };
+		D0BA93682BE3C46100F2CD99 /* BaseRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRouter.swift; sourceTree = "<group>"; };
+		D0BA936C2BE3C4C100F2CD99 /* Auth.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Auth.storyboard; sourceTree = "<group>"; };
+		D0BA936E2BE3C4DE00F2CD99 /* Loading.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Loading.storyboard; sourceTree = "<group>"; };
+		D0BA93762BE3C54600F2CD99 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		D0BA938C2BE3CD1600F2CD99 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
+		E3665BA7BD21EC70BAC44AD4 /* Pods-FirebaseDatabaseIssue.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebaseDatabaseIssue.release.xcconfig"; path = "Target Support Files/Pods-FirebaseDatabaseIssue/Pods-FirebaseDatabaseIssue.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +75,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D81789CD4D677EB53197688 /* Pods_FirebaseDatabaseIssue.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		09A0F0851881B2722FB1AC9B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4DC40BF80E7F83C7850C1CCA /* Pods_FirebaseDatabaseIssue.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		248B76D76E906AEC1118849B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4CF3F1BDBAE2A1BD513BF7F8 /* Pods-FirebaseDatabaseIssue.debug.xcconfig */,
+				E3665BA7BD21EC70BAC44AD4 /* Pods-FirebaseDatabaseIssue.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		D0BA93172BE3C1CB00F2CD99 = {
 			isa = PBXGroup;
 			children = (
+				D0BA938C2BE3CD1600F2CD99 /* R.generated.swift */,
 				D0BA93222BE3C1CB00F2CD99 /* FirebaseDatabaseIssue */,
 				D0BA93212BE3C1CB00F2CD99 /* Products */,
+				248B76D76E906AEC1118849B /* Pods */,
+				09A0F0851881B2722FB1AC9B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +121,146 @@
 		D0BA93222BE3C1CB00F2CD99 /* FirebaseDatabaseIssue */ = {
 			isa = PBXGroup;
 			children = (
-				D0BA93232BE3C1CB00F2CD99 /* AppDelegate.swift */,
-				D0BA93252BE3C1CB00F2CD99 /* SceneDelegate.swift */,
-				D0BA93272BE3C1CB00F2CD99 /* ViewController.swift */,
-				D0BA93292BE3C1CB00F2CD99 /* Main.storyboard */,
-				D0BA932C2BE3C1CC00F2CD99 /* Assets.xcassets */,
-				D0BA932E2BE3C1CC00F2CD99 /* LaunchScreen.storyboard */,
-				D0BA93312BE3C1CC00F2CD99 /* Info.plist */,
+				D0BA93372BE3C26B00F2CD99 /* Sources */,
 			);
 			path = FirebaseDatabaseIssue;
+			sourceTree = "<group>";
+		};
+		D0BA93372BE3C26B00F2CD99 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				D0BA93412BE3C2D300F2CD99 /* Dependency Container */,
+				D0BA93382BE3C27600F2CD99 /* Application */,
+				D0BA93492BE3C32000F2CD99 /* Controllers */,
+				D0BA93642BE3C43000F2CD99 /* Services */,
+				D0BA93672BE3C45600F2CD99 /* Common */,
+				D0BA936A2BE3C47E00F2CD99 /* Resources */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		D0BA93382BE3C27600F2CD99 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				D0BA93392BE3C28600F2CD99 /* AppDelegateRouter.swift */,
+				D0BA93232BE3C1CB00F2CD99 /* AppDelegate.swift */,
+				D0BA933B2BE3C2A000F2CD99 /* AppDelegateUseCases.swift */,
+				D0BA933D2BE3C2AE00F2CD99 /* AppDelegateInteractor.swift */,
+				D0BA933F2BE3C2C000F2CD99 /* AppDelegatePresenter.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		D0BA93412BE3C2D300F2CD99 /* Dependency Container */ = {
+			isa = PBXGroup;
+			children = (
+				D0BA93422BE3C2DD00F2CD99 /* BaseDependencyContainer.swift */,
+				D0BA93442BE3C2ED00F2CD99 /* Screens factory builder */,
+			);
+			path = "Dependency Container";
+			sourceTree = "<group>";
+		};
+		D0BA93442BE3C2ED00F2CD99 /* Screens factory builder */ = {
+			isa = PBXGroup;
+			children = (
+				D0BA93452BE3C2FB00F2CD99 /* LoadingScreenFactoryProtocol.swift */,
+				D0BA93472BE3C30900F2CD99 /* AuthScreenFactoryProtocol.swift */,
+			);
+			path = "Screens factory builder";
+			sourceTree = "<group>";
+		};
+		D0BA93492BE3C32000F2CD99 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D0BA93572BE3C36700F2CD99 /* Loading VC */,
+				D0BA934A2BE3C32700F2CD99 /* Login VC */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		D0BA934A2BE3C32700F2CD99 /* Login VC */ = {
+			isa = PBXGroup;
+			children = (
+				D0BA934E2BE3C33B00F2CD99 /* LoginRouter.swift */,
+				D0BA93502BE3C33B00F2CD99 /* LoginVC.swift */,
+				D0BA934D2BE3C33B00F2CD99 /* LoginUseCases.swift */,
+				D0BA934F2BE3C33B00F2CD99 /* LoginInteractor.swift */,
+				D0BA934B2BE3C33B00F2CD99 /* LoginPresenter.swift */,
+			);
+			path = "Login VC";
+			sourceTree = "<group>";
+		};
+		D0BA93572BE3C36700F2CD99 /* Loading VC */ = {
+			isa = PBXGroup;
+			children = (
+				D0BA935B2BE3C37300F2CD99 /* LoadingRouter.swift */,
+				D0BA935D2BE3C37300F2CD99 /* LoadingVC.swift */,
+				D0BA935A2BE3C37300F2CD99 /* LoadingUseCases.swift */,
+				D0BA935C2BE3C37300F2CD99 /* LoadingInteractor.swift */,
+				D0BA93582BE3C37300F2CD99 /* LoadingPresenter.swift */,
+			);
+			path = "Loading VC";
+			sourceTree = "<group>";
+		};
+		D0BA93642BE3C43000F2CD99 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				D0BA93652BE3C43E00F2CD99 /* TextFieldDesignFactory.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		D0BA93672BE3C45600F2CD99 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				D0BA93682BE3C46100F2CD99 /* BaseRouter.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		D0BA936A2BE3C47E00F2CD99 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D0BA93712BE3C50500F2CD99 /* Plists */,
+				D0BA93702BE3C4FC00F2CD99 /* Images */,
+				D0BA936B2BE3C4A200F2CD99 /* Storyboards */,
+				D0BA93742BE3C53900F2CD99 /* Localization Files */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		D0BA936B2BE3C4A200F2CD99 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				D0BA932E2BE3C1CC00F2CD99 /* LaunchScreen.storyboard */,
+				D0BA936C2BE3C4C100F2CD99 /* Auth.storyboard */,
+				D0BA936E2BE3C4DE00F2CD99 /* Loading.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		D0BA93702BE3C4FC00F2CD99 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				D0BA932C2BE3C1CC00F2CD99 /* Assets.xcassets */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		D0BA93712BE3C50500F2CD99 /* Plists */ = {
+			isa = PBXGroup;
+			children = (
+				D0BA93312BE3C1CC00F2CD99 /* Info.plist */,
+			);
+			path = Plists;
+			sourceTree = "<group>";
+		};
+		D0BA93742BE3C53900F2CD99 /* Localization Files */ = {
+			isa = PBXGroup;
+			children = (
+				D0BA93752BE3C54600F2CD99 /* Localizable.strings */,
+			);
+			path = "Localization Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +270,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D0BA93342BE3C1CC00F2CD99 /* Build configuration list for PBXNativeTarget "FirebaseDatabaseIssue" */;
 			buildPhases = (
+				53F984233A7F2C4A2649F2CE /* [CP] Check Pods Manifest.lock */,
+				D0BA93862BE3CA9C00F2CD99 /* ShellScript */,
 				D0BA931C2BE3C1CB00F2CD99 /* Sources */,
 				D0BA931D2BE3C1CB00F2CD99 /* Frameworks */,
 				D0BA931E2BE3C1CB00F2CD99 /* Resources */,
+				B372E734BD39A28B5C266E9F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -125,42 +324,123 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0BA93772BE3C54600F2CD99 /* Localizable.strings in Resources */,
+				D0BA936D2BE3C4C100F2CD99 /* Auth.storyboard in Resources */,
 				D0BA932D2BE3C1CC00F2CD99 /* Assets.xcassets in Resources */,
 				D0BA93302BE3C1CC00F2CD99 /* Base in Resources */,
-				D0BA932B2BE3C1CB00F2CD99 /* Base in Resources */,
+				D0BA936F2BE3C4DE00F2CD99 /* Loading.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		53F984233A7F2C4A2649F2CE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FirebaseDatabaseIssue-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B372E734BD39A28B5C266E9F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FirebaseDatabaseIssue/Pods-FirebaseDatabaseIssue-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FirebaseDatabaseIssue/Pods-FirebaseDatabaseIssue-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FirebaseDatabaseIssue/Pods-FirebaseDatabaseIssue-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D0BA93862BE3CA9C00F2CD99 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				$SRCROOT/R.generated.swift,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/R.generated.swift\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D0BA931C2BE3C1CB00F2CD99 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D0BA93282BE3C1CB00F2CD99 /* ViewController.swift in Sources */,
+				D0BA933C2BE3C2A000F2CD99 /* AppDelegateUseCases.swift in Sources */,
+				D0BA93662BE3C43E00F2CD99 /* TextFieldDesignFactory.swift in Sources */,
+				D0BA933E2BE3C2AE00F2CD99 /* AppDelegateInteractor.swift in Sources */,
+				D0BA93512BE3C33B00F2CD99 /* LoginPresenter.swift in Sources */,
+				D0BA93532BE3C33B00F2CD99 /* LoginUseCases.swift in Sources */,
+				D0BA93542BE3C33B00F2CD99 /* LoginRouter.swift in Sources */,
+				D0BA93552BE3C33B00F2CD99 /* LoginInteractor.swift in Sources */,
+				D0BA93692BE3C46100F2CD99 /* BaseRouter.swift in Sources */,
+				D0BA938D2BE3CD1600F2CD99 /* R.generated.swift in Sources */,
+				D0BA93562BE3C33B00F2CD99 /* LoginVC.swift in Sources */,
+				D0BA93462BE3C2FB00F2CD99 /* LoadingScreenFactoryProtocol.swift in Sources */,
+				D0BA935E2BE3C37300F2CD99 /* LoadingPresenter.swift in Sources */,
+				D0BA93602BE3C37300F2CD99 /* LoadingUseCases.swift in Sources */,
+				D0BA93612BE3C37300F2CD99 /* LoadingRouter.swift in Sources */,
+				D0BA93622BE3C37300F2CD99 /* LoadingInteractor.swift in Sources */,
+				D0BA93632BE3C37300F2CD99 /* LoadingVC.swift in Sources */,
 				D0BA93242BE3C1CB00F2CD99 /* AppDelegate.swift in Sources */,
-				D0BA93262BE3C1CB00F2CD99 /* SceneDelegate.swift in Sources */,
+				D0BA93432BE3C2DD00F2CD99 /* BaseDependencyContainer.swift in Sources */,
+				D0BA933A2BE3C28600F2CD99 /* AppDelegateRouter.swift in Sources */,
+				D0BA93482BE3C30900F2CD99 /* AuthScreenFactoryProtocol.swift in Sources */,
+				D0BA93402BE3C2C000F2CD99 /* AppDelegatePresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		D0BA93292BE3C1CB00F2CD99 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D0BA932A2BE3C1CB00F2CD99 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		D0BA932E2BE3C1CC00F2CD99 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				D0BA932F2BE3C1CC00F2CD99 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		D0BA93752BE3C54600F2CD99 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D0BA93762BE3C54600F2CD99 /* en */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -218,7 +498,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -275,7 +555,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -287,17 +567,19 @@
 		};
 		D0BA93352BE3C1CC00F2CD99 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4CF3F1BDBAE2A1BD513BF7F8 /* Pods-FirebaseDatabaseIssue.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9B6M85MQ7J;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = FirebaseDatabaseIssue/Info.plist;
+				INFOPLIST_FILE = FirebaseDatabaseIssue/Sources/Resources/Plists/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = Loading;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -319,17 +601,19 @@
 		};
 		D0BA93362BE3C1CC00F2CD99 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E3665BA7BD21EC70BAC44AD4 /* Pods-FirebaseDatabaseIssue.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9B6M85MQ7J;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = FirebaseDatabaseIssue/Info.plist;
+				INFOPLIST_FILE = FirebaseDatabaseIssue/Sources/Resources/Plists/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = Loading;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

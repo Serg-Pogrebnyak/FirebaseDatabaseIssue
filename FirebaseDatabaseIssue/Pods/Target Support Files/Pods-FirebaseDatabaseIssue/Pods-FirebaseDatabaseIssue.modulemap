@@ -1,0 +1,6 @@
+framework module Pods_FirebaseDatabaseIssue {
+  umbrella header "Pods-FirebaseDatabaseIssue-umbrella.h"
+
+  export *
+  module * { export * }
+}
